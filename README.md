@@ -1,7 +1,7 @@
-# Predicción del Precio de Alojamientos de Airbnb con Machine Learning
+# Predicción del Precio de Alojamientos de Airbnb con Machine Learning 🏘️
 
 ## Introducción
-Este proyecto utiliza técnicas de Machine Learning para predecir el precio diario de las viviendas utilizando un conjunto de datos extraído de Airbnb. El objetivo es aplicar un modelo de regresión que considere múltiples características para realizar predicciones precisas.
+Este proyecto utiliza técnicas de Machine Learning para **predecir el precio diario de los alojamientos** utilizando un conjunto de datos extraído de Airbnb. El objetivo es aplicar un **modelo de regresión** que considere múltiples características para realizar predicciones precisas. La práctica se ha desarrollado en [cuadernos de Jupyter](https://jupyter.org/), aprovechando la versatilidad y la potencia de [scikit-learn](https://scikit-learn.org/stable/), una biblioteca de aprendizaje automático de código abierto para Python que facilita la implementación de algoritmos de Machine Learning complejos.
 
 ## Enmarcación del Problema
 - **Tipo de Aprendizaje:** Supervisado, específicamente regresión múltiple y univariante.
@@ -16,7 +16,7 @@ El conjunto de datos proviene de [Opendatasoft Airbnb Listings](https://public.o
 - Características directas que impactan el precio.
 - Efecto de las métricas de reserva, disponibilidad, calidad y popularidad.
 
-## Análisis Exploratorio de Datos (EDA)
+## Análisis Exploratorio de Datos (EDA) 
 Se realiza un análisis exploratorio centrado en:
 - Información del anfitrión.
 - Información geográfica.
@@ -24,6 +24,8 @@ Se realiza un análisis exploratorio centrado en:
 - Precios y costos adicionales.
 - Restricciones de reserva y disponibilidad.
 - Métricas de calidad y popularidad.
+
+![Mapa de calor de precio por noche](img/mapa-calor-precios-madrid.png)
 
 ### Preparación de los Datos
 - Filtrado inicial: Se seleccionan registros exclusivos de la Comunidad de Madrid.
@@ -49,6 +51,8 @@ Se realiza una comparación detallada de cómo cada modelo se desempeña según 
 
 ### Ajuste Fino y Validación
 Se ajustan los parámetros de los modelos seleccionados mediante técnicas como la **validación cruzada** y la búsqueda en cuadrícula *(GridSearchCV)* para encontrar la configuración óptima que *maximice la precisión y minimice el error*. Este proceso también ayuda a confirmar la robustez del modelo y su capacidad para generalizar bien a partir de datos no vistos.
+
+![Valores predichos por el modelo vs valores reales](img/pred-real-model.png "Real vs Predict - Gradient Boosting Regressor")
 
 ## Conclusiones
 Durante mi práctica en el módulo de Machine Learning, he probado varios modelos y analizado sus puntos fuertes y áreas de mejora. Después de un análisis cuidadoso, he elegido el *Gradient Boosting Regressor* por su buen rendimiento. Esta elección refleja mi búsqueda de un modelo con buen rendimiento y mi crecimiento personal en este campo. Este proceso ha aumentado mi motivación por seguir aprendiendo y me ha enseñado el valor de la perseverancia y la curiosidad en el mundo del Machine Learning. Reconozco que todavía tengo mucho que aprender y estoy emocionada por enfrentar los desafíos futuros que me ayudarán a crecer en esta disciplina.
