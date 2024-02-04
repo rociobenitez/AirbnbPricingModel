@@ -49,6 +49,8 @@ Para evaluar la efectividad de los diferentes modelos, se utilizan varias métri
 
 Se realiza una comparación detallada de cómo cada modelo se desempeña según estas métricas, permitiendo seleccionar el modelo que mejor equilibre precisión y robustez frente a datos nuevos.
 
+![Valores predichos vs valores reales de todos los modelos](img/models.jpg)
+
 ### Ajuste Fino y Validación
 Se ajustan los parámetros de los modelos seleccionados mediante técnicas como la **validación cruzada** y la búsqueda en cuadrícula *(GridSearchCV)* para encontrar la configuración óptima que *maximice la precisión y minimice el error*. Este proceso también ayuda a confirmar la robustez del modelo y su capacidad para generalizar bien a partir de datos no vistos.
 
